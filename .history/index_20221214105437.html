@@ -184,6 +184,13 @@
 
     </div>
 
+    <!-- <div style="background-color: rgb(60, 60, 60);">
+        <div class="container text-light" style="padding-top: 30px; padding-bottom: 30px; text-align:center;">
+            <h2><strong>EDGE generates choreographies from music</strong></h2>
+            <p>EDGE uses music embeddings from the powerful Jukebox model to gain a broad understanding of music and create high-quality dances even for in-the-wild music samples. (Unmute for music)</p>
+        </div>
+    </div> -->
+
     <!-- Big grid -->
     <div style="background-color: rgb(0, 0, 0);">
         <div class="video-row">
@@ -212,19 +219,31 @@
             </div>
         </div>
 
+
         <div class="video-row">
             <div class="col" style="padding:0; display:grid;">
                 <video class="specialvideo video lazy img-fluid" autoplay muted loop playsinline controls>
-                    <source src="./assets/resources/id00619.mp4" type="video/mp4"></source>
+                    <source src="./assets/resources/id00739.mp4" type="video/mp4"></source>
                 </video>
             </div>
+            <div class="col" style="padding:0; display:grid;">
+                <video class="specialvideo video lazy img-fluid" autoplay muted loop playsinline controls>
+                    <source src="./assets/resources/id00879.mp4" type="video/mp4"></source>
+                </video>
+            </div>
+        </div>
+        <div class="video-row">
             <div class="col" style="padding:0; display:grid;">
                 <video class="specialvideo video lazy img-fluid" autoplay muted loop playsinline controls>
                     <source src="./assets/resources/id00996.mp4" type="video/mp4"></source>
                 </video>
             </div>
+            <div class="col" style="padding:0; display:grid;">
+                <video class="specialvideo video lazy img-fluid" autoplay muted loop playsinline controls>
+                    <source src="./assets/resources/id01153.mp4" type="video/mp4"></source>
+                </video>
+            </div>
         </div>
-
     </div>
     <div style="background-color: rgb(60, 60, 60);">
         <div class="container text-light" style="padding-top: 30px; padding-bottom: 30px; text-align:center;">
@@ -240,7 +259,16 @@
             </div>
         </div>
     </div>
-
+    <!-- <div style="background-color: rgb(230, 230, 230);">
+        <div class="container text-dark" style="max-width: 768px; padding-top: 30px; padding-bottom: 30px;">
+            <div class="row">
+                <div class="col-md-12">
+                    <h6 class="caption" style="font-size: 1.2em; text-align:center;">Pictured: Although Dance2MIDI is trained on 30-second dance clips and MIDI pieces, it can generate MIDI pieces of any length by imposing temporal constraints on batches of sequences. In the pictured example, EDGE constrains the first half of each sequence to
+                        match the second half of the previous one.</h6>
+                </div>
+            </div>
+        </div>
+    </div> -->
     <div style="background-color: rgb(70, 70, 70);">
         <div class="container text-light" style="max-width: 768px; padding-top: 30px; padding-bottom: 30px;">
             <div class="row">
@@ -258,12 +286,64 @@
         </div>
     </div>
 
+    <!-- <div>
+        <div class="video-row width-switch">
+            <div class="col" style="padding:0; display:grid;">
+                <video id="rotatingvideo1" class="specialvideo video lazy img-fluid" autoplay muted loop playsinline controls>
+                    <source src="./assets/media/gallery1.mp4" type="video/mp4"></source>
+                </video>
+                <video id="rotatingvideo2" class="hidden specialvideo video lazy img-fluid" autoplay muted loop playsinline controls>
+                    <source src="./assets/media/gallery2.mp4" type="video/mp4"></source>
+                </video>
+                <video id="rotatingvideo3" class="hidden specialvideo video lazy img-fluid" autoplay muted loop playsinline controls>
+                    <source src="./assets/media/gallery3.mp4" type="video/mp4"></source>
+                </video>
+                <video id="rotatingvideo4" class="hidden specialvideo video lazy img-fluid" autoplay muted loop playsinline controls>
+                    <source src="./assets/media/gallery4.mp4" type="video/mp4"></source>
+                </video>
+                <div class="mycarouselcaption">
+                    <p id="rotatingcaption1">Joint-Wise Constraint: Generate lower body from upper body</p>
+                    <p id="rotatingcaption2" class="hidden">Joint-Wise Constraint: Generate upper body from lower body</p>
+                    <p id="rotatingcaption3" class="hidden">Temporal Constraint: In-Betweening</p>
+                    <p id="rotatingcaption4" class="hidden">Temporal Constraint: Continuation</p>
+                </div>
+            </div>
+            <div class="col text-light align-items-center" style="background-color: rgb(35, 35, 35);">
+                <div style="display:flex;  align-items: center; justify-content: center; height:100%;">
+                    <div class="container width-switch-text" style="font-size: 1vw;">
+                        <h1>Editable Synthesis</h1>
+                        <h5>EDGE supports arbitrary spatial and temporal constraints. This can be used to support many end-user applications, including:</h5>
+                        <p></p>
+                        <ol>
+                            <li>
+                                Arbitrarily long dances, by enforcing temporal continuity between batches of multiple sequences.
+                            </li>
+                            <li>
+                                Dances subject to joint-wise constraints, i.e. lower body generation given upper body motion, or vice versa.
+                            </li>
+                            <li>
+                                Motion In-Betweening: Dances that start and end with prespecified motions.
+                            </li>
+                            <li>
+                                Dance Continuation: Dances that start with a prespecified motion.
+                            </li>
+                            <li>
+                                And many more!
+                            </li>
+                        </ol>
+                        <button class="btn btn-outline-light" type="submit" onclick="cycleGallery();">Click to cycle gallery</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div> -->
     <div style="background-color: rgb(230, 230, 230);">
         <div class="container my-text-dark" style="padding-top: 30px; padding-bottom: 30px; text-align:center;">
             <div clas="row">
                 <div class="col">
                     <h1>The D2MIDI Dataset</h1>
-                    <p align="left"> D2MIDI is the first dance-to-MIDI multi-
+                    <p>D2MIDI is the first dance-to-MIDI multi-
                         instrument dataset, which has several important features:
                         1) High-quality solo dance video: the videos are crawled
                         from the internet but are hand-picked so that some bad quality
@@ -271,8 +351,10 @@
                         we transcribe the MIDI from the audio and obtain the time-
                         synchronized and paired multi-instrument and polyphonic
                         MIDI for each dance video. 3) Multi-style and large-scale: the dance videos cover several styles and
-                        contain 6k clips. The left column of the following two columns is the audio sample in the D2MIDI dataset, and the right column is the corresponding MIDI sample in the D2MIDI dataset</p>
-
+                        contain 6k clips.</p>
+                    <!-- <video class="specialvideo video lazy img-fluid" autoplay muted loop playsinline style="width:65%">
+                        <source src="./assets/media/physical.mp4" type="video/mp4"></source>
+                    </video> -->
                     <audio controls>
                         <source src="./assets/wav/2_0001.wav" type="audio/mpeg">
                     </audio>
