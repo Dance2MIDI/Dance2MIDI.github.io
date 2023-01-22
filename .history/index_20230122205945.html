@@ -127,9 +127,6 @@
         preloadImages()
         var stickyElements = Sticksy.initializeAll('.js-sticky-widget')
     </script>
-    <!-- <div style="background-color: rgb(26, 26, 26);">
-        <img src="./assets/media/cover.png" class="img-fluid" alt="Responsive image">
-    </div> -->
 
     <div class="button-bar text-light" style="padding-bottom: 10px; background-color: rgb(35, 35, 35);">
         <div class="container" style="max-width: 768px;">
@@ -153,7 +150,26 @@
                     <path fill="white" d="M16 0H8C6.9 0 6 .9 6 2V18C6 19.1 6.9 20 8 20H20C21.1 20 22 19.1 22 18V6L16 0M20 18H8V2H15V7H20V18M4 4V22H20V24H4C2.9 24 2 23.1 2 22V4H4M10 10V12H18V10H10M10 14V16H15V14H10Z"></path>
                 </svg>Paper
             </a>
+
+            <a class="btn text-light" role="button" href="https://github.com/Dance2MIDI/Dance2MIDI">
+                <svg style="width:24px;height:24px;margin-left:-12px;margin-right:12px" viewBox="0 0 24 24">
+                    <path fill="white" d="M16 0H8C6.9 0 6 .9 6 2V18C6 19.1 6.9 20 8 20H20C21.1 20 22 19.1 22 18V6L16 0M20 18H8V2H15V7H20V18M4 4V22H20V24H4C2.9 24 2 23.1 2 22V4H4M10 10V12H18V10H10M10 14V16H15V14H10Z"></path>
+                </svg>Code
+            </a>
+
+            <a class="btn text-light" role="button" href="https://drive.google.com/drive/folders/1ZBeUciZWEZbLTwDz8keCRQI0Kw0BVgid?usp=share_link">
+                <svg style="width:24px;height:24px;margin-left:-12px;margin-right:12px" viewBox="0 0 24 24">
+                    <path fill="white" d="M16 0H8C6.9 0 6 .9 6 2V18C6 19.1 6.9 20 8 20H20C21.1 20 22 19.1 22 18V6L16 0M20 18H8V2H15V7H20V18M4 4V22H20V24H4C2.9 24 2 23.1 2 22V4H4M10 10V12H18V10H10M10 14V16H15V14H10Z"></path>
+                </svg>Dataset
+            </a>
         </div>
+        
+
+
+
+        
+        
+
     </div>
     <div style="background-color: rgb(0, 0, 0);">
         <div class="container text-light" style="max-width: 768px; padding-top: 30px; padding-bottom: 30px;">
@@ -173,8 +189,7 @@
                             the dance motion using the GCN, and 2) to generate harmonious and coherent music, we employ Transformer to decode
                             the MIDI sequence. We evaluate the generated music of our
                             framework trained on D2MIDI dataset and demonstrate that
-                            our method outperforms existing methods. We will publish
-                            the dataset and code soon.
+                            our method outperforms existing methods. We have released D2MIDI dataset and Dance2MIDI code. Please check in 
                         <!-- </strong> -->
                     </p>
                 </div>
@@ -263,7 +278,7 @@
             <div clas="row">
                 <div class="col">
                     <h1>The D2MIDI Dataset</h1>
-                    <p align="left"></p> D2MIDI is the first dance-to-MIDI multi-
+                    <p align="left"> D2MIDI is the first dance-to-MIDI multi-
                         instrument dataset, which has several important features:
                         1) High-quality solo dance video: the videos are crawled
                         from the internet but are hand-picked so that some bad quality
@@ -271,8 +286,8 @@
                         we transcribe the MIDI from the audio and obtain the time-
                         synchronized and paired multi-instrument and polyphonic
                         MIDI for each dance video. 3) Multi-style and large-scale: the dance videos cover several styles and
-                        contain 6k clips.</p>
-    
+                        contain 6k clips. The left column of the following two columns is the audio sample in the D2MIDI dataset, and the right column is the corresponding MIDI sample in the D2MIDI dataset</p>
+
                     <audio controls>
                         <source src="./assets/wav/2_0001.wav" type="audio/mpeg">
                     </audio>
