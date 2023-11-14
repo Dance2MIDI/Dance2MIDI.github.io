@@ -182,19 +182,18 @@
                 <div class="col-md-12">
                     <p>
                         <!-- <strong> -->
-                            Previous works focus
-                            on monophonic or raw audio generation, while the multi-
-                            instruments scenario is under-explored. The challenges of
-                            the dance-driven multi-instruments music (MIDI) generation are two-fold: 1) no publicly available multi-instruments
-                            MIDI and video paired dataset and 2) the weak correlation between music and video. To tackle these challenges,
-                            we build the first multi-instruments MIDI and dance paired
-                            dataset (D2MIDI). Based on our proposed dataset, we introduce a multi-instruments MIDI generation framework
-                            (Dance2MIDI) conditioned on dance video. Specifically, 1)
-                            to model the correlation between music and dance, we encode
-                            the dance motion using the GCN, and 2) to generate harmonious and coherent music, we employ Transformer to decode
-                            the MIDI sequence. We evaluate the generated music of our
-                            framework trained on D2MIDI dataset and demonstrate that
-                            our method outperforms existing methods. We have released D2MIDI dataset and Dance2MIDI code.
+                            Dance-driven music generation aims to generate musical pieces conditioned on dance videos. 
+                        Previous works focus on monophonic or raw audio generation, while the multi-instruments scenario is under-explored. 
+                        The challenges associated with the dance-driven multi-instrument music (MIDI) generation are twofold: 
+                        1) no publicly available multi-instruments MIDI and video paired dataset and 2) the weak correlation between music and video. 
+                        To tackle these challenges, we build the first multi-instruments MIDI and dance paired dataset (D2MIDI). 
+                        Based on our proposed dataset, we introduce a multi-instruments MIDI generation framework (Dance2MIDI) conditioned on dance video. 
+                        Specifically, 1) to capture the relationship between dance and music, we employ the Graph Convolutional Network to encode the dance motion. 
+                        This allows us to extract features related to dance movement and dance style, 
+                        2) to generate a harmonious rhythm, we utilize a Transformer model to decode the drum track sequence, leveraging a cross-attention mechanism, 
+                        and 3) we model the task of generating the remaining tracks based on the drum track as a sequence understanding and completion task. 
+                        A BERT-like model is employed to comprehend the context of the entire music piece through self-supervised learning. 
+                        We evaluate the generated music of our framework trained on the D2MIDI dataset and demonstrate that our method achieves State-of-the-Art performance.
                         <!-- </strong> -->
                     </p>
                 </div>
