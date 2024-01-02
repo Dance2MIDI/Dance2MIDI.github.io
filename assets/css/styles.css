@@ -9,6 +9,11 @@ Some styles originally from https://dreamfusion3d.github.io/
     font-style: normal
 }
 
+.audio-control {
+    width: 100%; /* 设置音频控件宽度与父容器相同 */
+    margin-top: 10px; /* 可选，为了在视频和音频控件之间添加一些间隔 */
+}
+
 .captioned_videos h6 {
     max-width: 768px;
     padding-top: 6px;
